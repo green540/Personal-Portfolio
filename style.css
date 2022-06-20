@@ -1,0 +1,42 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+}
+
+.body-container {
+  display: grid;
+}
+.header {
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-rows: repeat(auto-fit, 10vh);
+}
+.background {
+  background-color: rgba(24, 219, 34, 0.582);
+  height: 40vh;
+  transform: skewY(-0.1rad) translateY(-40%);
+  z-index: 2;
+  position: relative;
+}
+.profile-container {
+  position: relative;
+  z-index: 3;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+
+  padding: 2rem;
+  transform: translateY(-60%);
+}
+
+.profile-container > img {
+  max-height: 100%;
+  justify-self: flex-end;
+}
+
+.about-me {
+  max-width: 50%;
+  border: 1px solid black;
+  justify-self: flex-start;
+}
